@@ -5,8 +5,7 @@ namespace AdditionalTasks1_SortArrays
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {         
             MyArray myArr1 = new MyArray();
 
             Console.WriteLine("Изначальный массив->");
