@@ -49,7 +49,48 @@ namespace AdditionalTasks1_SortArrays
                 }
         }
 
+        public static void SortByMethodShells(int[] inArray, TypeSort typeSort, out int[] outArray)//Сортировка без изменением массива, typeSort-режим сортировки  
+        {
+            outArray = new int[inArray.Length];
+            for (int k = 0; k < inArray.Length; k++)
+            {
+                outArray[k] = inArray[k];
+            }
+            int i, j, step;
+            int temporaryBuffer;
+            for (step = outArray.Length / 2; step > 0; step /= 2)
+                for (i = step; i < outArray.Length; i++)
+                {
+                    temporaryBuffer = outArray[i];
+                    for (j = i; j >= step; j -= step)
+                    {
+                        if (typeSort == TypeSort.down)// выбран режим сортировки от меньшего к большему
+                        {
+                            if (temporaryBuffer > outArray[j - step])
+                            {
+                                outArray[j] = outArray[j - step];
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                        else// выбран режим сортировки от большего к меньшему
+                        {
+                            if (temporaryBuffer < outArray[j - step])
+                            {
+                                outArray[j] = outArray[j - step];
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
 
+                    }
+                    outArray[j] = temporaryBuffer;
+                }
+        }
 
 
 
