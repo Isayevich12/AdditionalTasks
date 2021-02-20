@@ -6,29 +6,29 @@ namespace AdditionalTasks1_SortArrays
     {
         static void Main(string[] args)
         {
-            //MyArray myArr1 = new MyArray();
+            //тут не заморачивался
 
-            //Console.WriteLine("Изначальный массив->");
-            //myArr1.ShowArray();
-            //Console.WriteLine(new string('_', 50));
+            MyArray myArr1 = new MyArray();
 
-            //Console.WriteLine("После сортировки->");
-            //myArr1.SortArry(TypeSort.down);
+            Console.WriteLine("Изначальный массив1->");
+            myArr1.ShowArray();
+            Console.WriteLine(new string('_', 50));
+            Console.WriteLine("После сортировки методом Шелла->");
+            myArr1.SortArrayShall(TypeSort.down);
+            myArr1.ShowArray();
+            myArr1.SortArrayShall(TypeSort.up);
+            myArr1.ShowArray();
+            Console.WriteLine(new string('_', 50));
 
-            //myArr1.ShowArray();
+            MyArray myArr2 = new MyArray();
 
-            //myArr1.SortArry(TypeSort.up);
-
-            //myArr1.ShowArray();
-
-
-            int[] my = { 10, 4, 2, 14, 67, 2, 11, 33, 1, 15, 87,68, 99 };
-            Sorter.QuickSort(my, 0, my.Length - 1);
-
-            foreach (var item in my)
-            {
-                Console.Write(item.ToString()+" ");
-            }
+            Console.WriteLine("Изначальный массив2->");
+            myArr2.ShowArray();
+            Console.WriteLine(new string('_', 50));
+            Console.WriteLine("После сортировки методом QuickSort->");
+            myArr2.QuickSort();
+            myArr2.ShowArray();
+            Console.WriteLine(new string('_', 50));
 
 
         }

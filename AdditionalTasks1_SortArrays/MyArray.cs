@@ -37,7 +37,7 @@ namespace AdditionalTasks1_SortArrays
             Console.WriteLine();
         }
 
-        public void SortArry (TypeSort typeSort)
+        public void SortArrayShall (TypeSort typeSort)
         {
             if (typeSort == TypeSort.down)
             {
@@ -49,6 +49,10 @@ namespace AdditionalTasks1_SortArrays
             }
         }
 
+        public void QuickSort()
+        {
+            Sorter.QuickSort(myArr, 0, myArr.Length - 1);
+        }
 
     }
 }
