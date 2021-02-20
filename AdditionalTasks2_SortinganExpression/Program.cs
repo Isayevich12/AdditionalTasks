@@ -6,7 +6,20 @@ namespace AdditionalTasks2_SortinganExpression
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //string myExpression = "privet1 mir vsem";
+
+            //string[] arrString = myExpression.Split(' ');
+
+            //Console.WriteLine(arrString[0].Length);
+
+            //foreach (var item in arrString)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            string v = SorterExpression.SortExpression(" hello word my");
+            Console.WriteLine(v);
         }
     }
 }
