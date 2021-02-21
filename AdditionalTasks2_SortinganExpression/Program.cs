@@ -6,20 +6,11 @@ namespace AdditionalTasks2_SortinganExpression
     {
         static void Main(string[] args)
         {
-            //string myExpression = "privet1 mir vsem";
+            Console.WriteLine($"Введите предложение:");
+            string expression = Console.ReadLine();
+            Console.WriteLine($"{new string('_',50)}\nОтсортировано по возрастанию длины слов->\n{expression.SortExpression(TypeSort.up)}\n" +
+                $"Отсортировано по убыванию длины слов->\n{expression.SortExpression(TypeSort.down)}");
 
-            //string[] arrString = myExpression.Split(' ');
-
-            //Console.WriteLine(arrString[0].Length);
-
-            //foreach (var item in arrString)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
-
-            string v = SorterExpression.SortExpression(" hello word my");
-            Console.WriteLine(v);
         }
     }
 }
