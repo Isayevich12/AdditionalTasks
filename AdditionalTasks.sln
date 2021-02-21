@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTasks1_SortArrays", "AdditionalTasks1_SortArrays\AdditionalTasks1_SortArrays.csproj", "{13B1BCD3-C29C-400A-94C8-4A20A38E3C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTasks1_SortArrays", "AdditionalTasks1_SortArrays\AdditionalTasks1_SortArrays.csproj", "{13B1BCD3-C29C-400A-94C8-4A20A38E3C48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTasks2_SortinganExpression", "AdditionalTasks2_SortinganExpression\AdditionalTasks2_SortinganExpression.csproj", "{BF02E1B4-599F-4231-854B-A1F8E81BC54D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTasks2_SortinganExpression", "AdditionalTasks2_SortinganExpression\AdditionalTasks2_SortinganExpression.csproj", "{BF02E1B4-599F-4231-854B-A1F8E81BC54D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
