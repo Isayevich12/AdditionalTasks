@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTasks1_SortArrays
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTasks2_SortinganExpression", "AdditionalTasks2_SortinganExpression\AdditionalTasks2_SortinganExpression.csproj", "{BF02E1B4-599F-4231-854B-A1F8E81BC54D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask3_UserCollectionQueueWithPriority", "AdditionalTask3_UserCollectionQueueWithPriority\AdditionalTask3_UserCollectionQueueWithPriority.csproj", "{009BE13E-CC76-4120-B0A2-227F4BB166AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BF02E1B4-599F-4231-854B-A1F8E81BC54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF02E1B4-599F-4231-854B-A1F8E81BC54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF02E1B4-599F-4231-854B-A1F8E81BC54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009BE13E-CC76-4120-B0A2-227F4BB166AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009BE13E-CC76-4120-B0A2-227F4BB166AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009BE13E-CC76-4120-B0A2-227F4BB166AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009BE13E-CC76-4120-B0A2-227F4BB166AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
