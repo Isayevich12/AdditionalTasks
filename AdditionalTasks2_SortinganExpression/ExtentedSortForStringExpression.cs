@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AdditionalTasks2_SortinganExpression
 {
-   static class ExtentedSortForStringExpression
+   static class ExtentedSortForStringExpression//расширяющий метод для типа string
     {
         static public string SortExpression(this string expression, TypeSort typeSort)
         {
