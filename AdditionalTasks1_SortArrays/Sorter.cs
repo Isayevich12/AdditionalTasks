@@ -4,12 +4,12 @@ using System.Text;
 
 namespace AdditionalTasks1_SortArrays
 {
-    enum TypeSort
+    enum TypeSort//для сортировки массивов от меньшего к большему либо наоборот
     {
         up = 0,//режим от меньшего к большему 
         down,//режим от большего к меньшему 
     }
-    static class Sorter
+    static class Sorter//  Класс - хранилище методов сортировки массивов
     {
         public static void SortByMethodShells(int[] inArray, TypeSort typeSort)//Сортировка с изменением массива, typeSort-режим сортировки  
         {

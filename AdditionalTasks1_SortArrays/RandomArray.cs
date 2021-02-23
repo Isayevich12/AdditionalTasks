@@ -4,18 +4,16 @@ using System.Text;
 
 namespace AdditionalTasks1_SortArrays
 {
-    class RandomArray
+    class RandomArray// Класс- генератор интового массива  
     {
         public int[] Array { get;  }
         private static Random random = new Random();
 
         public RandomArray()
         {    
-            int lenghtArray = random.Next(3, 10);
+            Array = new int[random.Next(3, 10)];
 
-            Array = new int[lenghtArray];
-
-            for (int i = 0; i < lenghtArray; i++)
+            for (int i = 0; i < Array.Length; i++)
             {
                 Array[i] = random.Next(100);
             }

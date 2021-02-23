@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AdditionalTasks1_SortArrays
 {
-    class MyArray
+    class MyArray// большей необходимости в данной задаче в этом нет, просто решил потренироваться))) 
     {
         private int[] myArr;
 
