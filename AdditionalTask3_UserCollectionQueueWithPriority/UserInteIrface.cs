@@ -35,11 +35,10 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
                             {
                                 Console.WriteLine($"Марка->{item?.Name}\tПриоритет->{item?.Priority}");
                             }
-
                             break;
                         }
                     case "add":
-                        {
+                        {                        
                             Car car = GenerateCar();
 
                             if (car != null)
@@ -50,12 +49,10 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
                             {
                                 Console.WriteLine("Неверный ввод приоритета!!");
                             }
-
-
                             break;
                         }
                     case "skip":
-                        {
+                        {                          
                             carsQueue.ReleaseFistItem();
 
                             break;

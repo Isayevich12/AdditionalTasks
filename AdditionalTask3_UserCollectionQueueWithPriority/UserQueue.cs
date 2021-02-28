@@ -7,18 +7,16 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
 {
     class UserQueue<T> : IEnumerable, IEnumerator where T : IPriority
     {
-        private T[] Subjects { get; set; }
-        private int LenghtQueue { get; set; }
+        private T[] Subjects { get; set; }      
         private int position = -1;
 
         public UserQueue()
         {
-            Subjects = new T[1];
+            this.Subjects = new T[1];
 
-            this.LenghtQueue = 0;
         }
 
-        public T this[int index]// индексатор
+        public T this[int index]// индексатор впринципе не нужен
         {
             get
             {
@@ -30,17 +28,22 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
                 {
                     return Subjects[index];
                 }
-
-
             }
+        }
+
+
+        public void ShowLengh()
+        {
+            Console.WriteLine($"lenght = {this.Subjects.Length}");
         }
 
         public void AddItem(T item)// добавляет элемент в коллекцию
         {
-            if (this.LenghtQueue == 0)
+            if (this.Subjects[0] == null)
             {
-                this.LenghtQueue++;
+                this.Subjects = new T[1];
                 this.Subjects[0] = item;
+
             }
             else
             {
@@ -56,14 +59,10 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
 
                 this.Subjects = buffArr;
 
-                this.LenghtQueue++;
-
                 SortByMethodShells();
             }
 
         }
-
-
 
         object IEnumerator.Current
         {
@@ -72,7 +71,6 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
                 return Subjects[position];
             }
         }
-
 
         IEnumerator IEnumerable.GetEnumerator()
         {
@@ -87,8 +85,8 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
                 return true;
             }
             else
-            {
-                position = -1;// reset           
+            {                        
+                ((IEnumerator)this).Reset();// reset
 
                 return false;
             }
@@ -96,7 +94,7 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
 
         void IEnumerator.Reset() // реализация метода Reset() интерфеса IEnumerator
         {
-
+            position = -1;
         }
 
         private void SortByMethodShells()//Сортировка с изменением массива 
@@ -136,19 +134,20 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
 
         public T ReleaseFistItem() // использование первого элемента в очереди (с удалением его)
         {
-            if (LenghtQueue == 0)
+            if (this.Subjects.Length == 1)
             {
-                return (T)(object)null;
+
+                return this.Subjects[0];
+
             }
             else
             {
-                this.LenghtQueue--;
 
                 T buffItem = this.Subjects[0];
 
-                T[] buffArr = new T[LenghtQueue];
+                T[] buffArr = new T[this.Subjects.Length - 1];
 
-                for (int i = 0; i < LenghtQueue; i++)
+                for (int i = 0; i < buffArr.Length; i++)
                 {
                     buffArr[i] = this.Subjects[i + 1];
                 }
