@@ -8,7 +8,7 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
     class UserQueue<T> : IEnumerable, IEnumerator where T : IPriority
     {
         private T[] Subjects { get; set; }
-        public int LenghtQueue { get; set; }
+        private int LenghtQueue { get; set; }
         private int position = -1;
 
         public UserQueue()
