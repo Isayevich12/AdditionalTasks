@@ -6,7 +6,7 @@ namespace AdditionalTask3_UserCollectionQueueWithPriority
     {
         static void Main(string[] args)
         {
-            // просто пример реализации пользовательской очереди        
+            // просто пример реализации пользовательской очереди         
 
             UserInteIrface.Run();
 
